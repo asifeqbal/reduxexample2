@@ -17,8 +17,13 @@
 const reducer = (state={counter:0},action)=>{
   switch(action.type){
      case 'INCREMENT':
-     return {...state,say:state.counter++}
-        
+     return {...state,say:state.counter++}  
+      
+      
+
+      case 'DECREMENT':
+      return{...state,say:state.counter--}
+
       default:
       return state;
   }
